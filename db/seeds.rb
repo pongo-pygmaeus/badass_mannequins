@@ -18,7 +18,7 @@ wigs = Wig.create ( [
                           style:  'Curly',
                           color:  'Brown',
                           length: 10,
-                          mannequin: mannequins[1] 
+                          mannequin: mannequins[0] 
                         }, 
 
                         { name:   'Casablanca',
@@ -32,14 +32,14 @@ wigs = Wig.create ( [
                           style:  'Wavy',
                           color:  'Red',
                           length: 25,
-                          mannequin: mannequins[1]
+                          mannequin: mannequins[2]
                         },
 
                         { name:   'Staind',
                           style:  'Curly',
                           color:  'Black',
                           length: 30,
-                          mannequin: mannequins[1] 
+                          mannequin: mannequins[3] 
                         }
                      ] )
 
