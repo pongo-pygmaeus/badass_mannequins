@@ -3,7 +3,6 @@
 <ul>
   <li><strong>Name: <%= @mannequin.name %></strong></li>
   <li>Height: <%= @mannequin.height %></li>
-  <%= image_tag("#{@mannequin.name.downcase}") %>
 </ul>
 
 <%= link_to "Edit", edit_mannequin_path(@mannequin) %>

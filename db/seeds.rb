@@ -9,37 +9,21 @@
 Mannequin.destroy_all
 Wig.destroy_all
 
-mannequins = Mannequin.create( [ { name: "Mike",  height: 22 },
-                                 { name: "Joan",  height: 25 },
-                                 { name: "Koala", height: 30 },
-                                 { name: "Bruch", height: 72 } ] )
-wigs = Wig.create ( [
-                        { name:   'Star Wars',
-                          style:  'Curly',
-                          color:  'Brown',
-                          length: 10,
-                          mannequin: mannequins[0] 
-                        }, 
+mannequins = []
 
-                        { name:   'Casablanca',
-                          style:  'Straight',
-                          color:  'Blonde',
-                          length: 20,
-                          mannequin: mannequins[1]
-                        },
+20.times do 
+  mannequins << Mannequin.create( name: Faker::Pokemon.name,  
+                                  height: rand(1..100) )
+end
 
-                        { name:   'Computer Blue',
-                          style:  'Wavy',
-                          color:  'Red',
-                          length: 25,
-                          mannequin: mannequins[2]
-                        },
-
-                        { name:   'Staind',
-                          style:  'Curly',
-                          color:  'Black',
-                          length: 30,
-                          mannequin: mannequins[3] 
-                        }
-                     ] )
-
+100.times do
+wigs = Wig.create ( { name:   [Faker::Space.moon, 
+                               Faker::Space.galaxy,
+                               Faker::Space.nebula,
+                               Faker::Space.planet].sample,
+                      style:  Faker::Cat.name,
+                      color:  Faker::Color.color_name,
+                      length: rand(1..100),
+                      mannequin: mannequins.sample
+                    } )
+end
