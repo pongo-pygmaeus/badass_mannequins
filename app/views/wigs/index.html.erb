@@ -1,0 +1,25 @@
+<h1>All of <%= @mannequin.name %>'s Wigs </h1>
+
+<div>
+  <ul>
+    <%= render @wigs %>
+
+    <!-- Assumptions -->
+    <!-- 1. @wigs is a collection of something -->
+    <!-- 2. There is a partial called _wig.html.erb -->
+    <!-- 3. Inside of that partial is a variable called wig -->
+
+    <!-- Flow -->
+    <!-- 1. Go to each wig in @wigs -->
+    <!-- 2. Render the partial called "_wig.html.erb" while
+    passing in the current wig as a local variable to the partial -->
+
+    <!-- Additionally, the _wig.html.erb knows about @mannequin from
+    the index route -->
+
+  </ul>
+  <%= link_to "Back to Mannequin", mannequin_path(@mannequin) %>
+  <br>
+  <br>
+  <%= link_to "Mannequins", mannequins_path %>
+</div>

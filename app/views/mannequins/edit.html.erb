@@ -1,0 +1,20 @@
+<h1>Edit the Mannequin Named "<%= @mannequin.name %>"</h1>
+
+<%= form_for @mannequin do |f| %>
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>
+

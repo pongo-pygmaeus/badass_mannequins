@@ -1,0 +1,15 @@
+<h1>Here are all the details for <%= @mannequin.name %></h1>
+
+<ul>
+  <li><strong>Name: <%= @mannequin.name %></strong></li>
+  <li>Height: <%= @mannequin.height %></li>
+  <%= image_tag("#{@mannequin.name.downcase}") %>
+</ul>
+
+<%= link_to "Edit", edit_mannequin_path(@mannequin) %>
+<%= link_to "Display Wigs (JS)", mannequin_wigs_path(@mannequin), class: "js-link" %>
+<%= link_to "Display Wigs (HTML)", mannequin_wigs_path(@mannequin) %>
+<%= link_to "Display Wigs (JSON)", mannequin_wigs_path(@mannequin, format: :json) %>
+<br>
+<br>
+<%= link_to "Mannequins", mannequins_path %>
