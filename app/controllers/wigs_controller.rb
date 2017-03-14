@@ -8,6 +8,7 @@ class WigsController < ApplicationController
 
     respond_to do |format|
       format.js   {render json: @wigs}
+      # format.js
       format.html
       format.json {render json: @wigs}
     end
