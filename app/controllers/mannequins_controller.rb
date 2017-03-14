@@ -1,7 +1,7 @@
 class MannequinsController < ApplicationController
 
   def not_restful
-    "HIIIIIIII"
+    
   end
 
   def index
