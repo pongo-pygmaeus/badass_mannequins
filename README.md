@@ -2,7 +2,7 @@
 ### Explaining some concepts in Rails 5 using a well documented Rails application. And mannequins.
 
 ### Currently Documented Topics
-* Active Record Migrations - see files in /app/controllers/
+* Active Record Migrations - see files in /db/migrate
 * Active Record Models - see files in /app/models/
 * Complex Active Record associations - see files in /app/models/
 * Javascript in Rails using view helpers and "remote: true"
