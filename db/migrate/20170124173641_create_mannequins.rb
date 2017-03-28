@@ -1,3 +1,4 @@
+
 class CreateMannequins < ActiveRecord::Migration[5.0]
   def change
     create_table :mannequins do |t|
