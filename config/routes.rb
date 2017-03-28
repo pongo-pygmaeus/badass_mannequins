@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'mannequins#index'
 
   resources :mannequins do
-    resources :wigs#, shallow: true
+    resources :wigs
     # get :test, to: "mannequins#not_restful"
     # resources :wigs, shallow: true
   end

@@ -8,7 +8,7 @@
 <%= link_to "Edit", edit_mannequin_path(@mannequin) %>
 <!-- remote: true -->
 <!-- class: "js-link" -->
-<%= link_to "Display Wigs (JS/AJAX)", mannequin_wigs_path(@mannequin), class: "js-link" %>
+<%= link_to "Display Wigs (JS/AJAX)", mannequin_wigs_path(@mannequin), remote: true %>
 <%= link_to "Display Wigs (HTML)", mannequin_wigs_path(@mannequin) %>
 <%= link_to "Display Wigs (JSON)", mannequin_wigs_path(@mannequin, format: :json) %>
 <br>
